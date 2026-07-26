@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <a class="header__logo">
+          <img src="img/logo.svg" alt="Ink House" />
+        </a>
+        <div class="header__menu">
+          <nav>
+            <ul class="header__nav-list">
+              <li>Репродукции</li>
+              <li>Новинки</li>
+              <li>О нас</li>
+              <li>
+                <a href="#" class="header__cart">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_3_996)">
+                      <path
+                        d="M9.25001 21.1667C9.75627 21.1667 10.1667 20.7563 10.1667 20.25C10.1667 19.7438 9.75627 19.3334 9.25001 19.3334C8.74375 19.3334 8.33334 19.7438 8.33334 20.25C8.33334 20.7563 8.74375 21.1667 9.25001 21.1667Z"
+                        stroke="#2C2D35"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M19.3333 21.1667C19.8396 21.1667 20.25 20.7563 20.25 20.25C20.25 19.7438 19.8396 19.3334 19.3333 19.3334C18.8271 19.3334 18.4167 19.7438 18.4167 20.25C18.4167 20.7563 18.8271 21.1667 19.3333 21.1667Z"
+                        stroke="#2C2D35"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M1.91666 1.91663H5.58332L8.03999 14.1908C8.12381 14.6128 8.35341 14.9919 8.68857 15.2617C9.02374 15.5315 9.44313 15.6749 9.87332 15.6666H18.7833C19.2135 15.6749 19.6329 15.5315 19.9681 15.2617C20.3032 14.9919 20.5328 14.6128 20.6167 14.1908L22.0833 6.49996H6.49999"
+                        stroke="#2C2D35"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_3_996">
+                        <rect
+                          width="22"
+                          height="22"
+                          fill="white"
+                          transform="translate(1 1)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <img class="hero__img" src="./img/hero-bird.png" alt="bird" />
+
+        <div class="hero__content">
+          <h1 class="hero__article">
+            Реплики картин от
+            <span class="hero__article-accent">Ink. House</span>
+          </h1>
+          <p class="hero__subscription">
+            Высокое качество отрисовки на плотной бумаге или льняном холсте.
+            Редкие произведения, доступные цены.
+          </p>
+          <button class="hero__button">Продукция</button>
+        </div>
+      </section>
+      <section class="catalog">
+        <div class="catalog__header">
+          <h2 class="catalog__article">Репродукции</h2>
+          <div class="catalog__countries">
+            <button class="catalog__country">Франция</button>
+            <button class="catalog__country">Германия</button>
+            <button class="catalog__country">Англия</button>
+          </div>
+        </div>
+        <div class="catalog__cards">
+          <div class="catalog__card">
+            <div class="catalog__card-wrapper">
+              <img src="img/france/1.jpg" class="catalog__card-art" />
+              <p class="catalog__card-author">Марсель Руссо</p>
+              <h3 class="catalog__card-article">Охота Амура</h3>
+              <p class="catalog__card-description">Холст, масло (50х80)</p>
+              <p class="catalog__card-price">14 500 руб</p>
+              <button class="catalog__card-cart">В корзину</button>
+            </div>
+          </div>
+          <div class="catalog__card">
+            <div class="catalog__card-wrapper">
+              <img src="img/france/2.jpg" class="catalog__card-art" />
+              <p class="catalog__card-author">Анри Селин</p>
+              <h3 class="catalog__card-article">Дама с собачкой</h3>
+              <p class="catalog__card-description">Акрил, бумага (50х80)</p>
+              <p class="catalog__card-price">16 500 руб</p>
+              <button class="catalog__card-cart">В корзину</button>
+            </div>
+          </div>
+          <div class="catalog__card">
+            <div class="catalog__card-wrapper">
+              <img src="img/france/3.jpg" class="catalog__card-art" />
+              <p class="catalog__card-author">Франсуа Дюпон</p>
+              <h3 class="catalog__card-article">Процедура</h3>
+              <p class="catalog__card-description">
+                Цветная литография (40х60)
+              </p>
+              <p class="catalog__card-price">20 000 руб</p>
+              <button class="catalog__card-cart">В корзину</button>
+            </div>
+          </div>
+          <div class="catalog__card">
+            <div class="catalog__card-wrapper">
+              <img src="img/france/4.jpg" class="catalog__card-art" />
+              <p class="catalog__card-author">Луи Детуш</p>
+              <h3 class="catalog__card-article">Роза</h3>
+              <p class="catalog__card-description">Бумага, акрил (50х80)</p>
+              <p class="catalog__card-price">12 000 руб</p>
+              <button class="catalog__card-cart">В корзину</button>
+            </div>
+          </div>
+          <div class="catalog__card">
+            <div class="catalog__card-wrapper">
+              <img src="img/france/5.jpg" class="catalog__card-art" />
+              <p class="catalog__card-author">Франсуа Дюпон</p>
+              <h3 class="catalog__card-article">Птичья трапеза</h3>
+              <p class="catalog__card-description">
+                Цветная литография (40х60)
+              </p>
+              <p class="catalog__card-price">22 500 руб</p>
+              <button class="catalog__card-cart">В корзину</button>
+            </div>
+          </div>
+          <div class="catalog__card">
+            <div class="catalog__card-wrapper">
+              <img src="img/france/6.jpg" class="catalog__card-art" />
+              <p class="catalog__card-author">Пьер Моранж</p>
+              <h3 class="catalog__card-article">Пейзаж с рыбой</h3>
+              <p class="catalog__card-description">
+                Цветная литография (40х60)
+              </p>
+              <p class="catalog__card-price">20 000 руб</p>
+              <button class="catalog__card-cart">В корзину</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="promo">
+        <div class="promo__content-wrapper">
+          <div class="promo__article">
+            <img
+              src="./img/logo2.svg"
+              alt="logo star"
+              class="promo__article-logo"
+            />
+            <h2 class="promo__article-text">
+              Новая коллекция французских авторов
+            </h2>
+          </div>
+          <p class="promo__description">
+            Сложно сказать, почему акционеры крупнейших компаний призывают нас к
+            новым свершениям, которые, в свою очередь, должны быть заблокированы
+            в рамках своих собственных рациональных ограничений.
+          </p>
+          <p class="promo__description">
+            Принимая во внимание показатели успешности, граница обучения кадров
+            предопределяет высокую востребованность направлений прогрессивного
+            развития.
+          </p>
+          <button class="promo__link">Ознакомиться</button>
+        </div>
+      </section>
+      <section class="team">
+        <div class="team__wrapper">
+          <img
+            src="./img/brushes.png"
+            alt="рука с кистями для рисования"
+            class="team__main-img"
+          />
+          <div class="team__info">
+            <h2 class="team__title">Наша команда</h2>
+            <p class="team__text">
+              Значимость этих проблем настолько очевидна, что базовый вектор
+              развития позволяет оценить значение экспериментов, поражающих
+              по своей масштабности и грандиозности. Мы вынуждены отталкиваться
+              от того, что консультация с широким активом.
+            </p>
+            <div class="team__members">
+              <img src="./img/member_1.png" alt="" class="team__member" />
+              <img src="./img/member_2.png" alt="" class="team__member" />
+              <img src="./img/member_3.png" alt="" class="team__member" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -203,6 +203,15 @@ body {
   line-height: 1;
 }
 
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+button {
+  border-style: solid;
+}
+
 .header {
   display: flex;
   align-items: center;
@@ -281,10 +290,23 @@ body {
   padding: 21px 60px 21px 60px;
   border-color: #376b44;
   border-width: 1px;
+  transition: 0.3s ease;
+}
+.hero__button:focus {
+  background-color: #d4e8d9;
+  color: #376b44;
+}
+.hero__button:hover {
+  background-color: #598d66;
+  color: #f4f6f5;
+}
+.hero__button:active {
+  background-color: #376b44;
+  color: #f4f6f5;
 }
 
 .catalog {
-  width: 1110px;
+  max-width: 1110px;
   margin: 0 auto;
   margin-bottom: 70px;
 }
@@ -306,17 +328,35 @@ body {
   margin: 30px;
 }
 .catalog__country {
+  box-sizing: border-box;
   padding-left: 20px;
   padding-right: 20px;
   height: 43px;
-  border-style: none;
+  border-style: solid;
+  border-color: transparent;
+  border-width: 2px;
   border-radius: 20px;
   background-color: #d4e8d9;
   font-weight: 500;
   font-size: 20px;
 }
+.catalog__country:focus {
+  box-sizing: border-box;
+  border-style: solid;
+  background-color: #d4e8d9;
+  border-width: 2px;
+  border-color: #598d66;
+}
+.catalog__country:hover {
+  color: #f4f6f5;
+  background-color: #598d66;
+}
+.catalog__country:active {
+  background-color: #376b44;
+}
 .catalog__cards {
   display: flex;
+  max-width: 1110px;
   flex-wrap: wrap;
   gap: 30px;
 }
@@ -433,4 +473,50 @@ body {
   flex-direction: row;
   margin-top: 20px;
   gap: 30px;
+}
+
+.footer {
+  background-color: #e1ede6;
+  padding-top: 23px;
+  padding-bottom: 23px;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  width: 1110px;
+  margin: 0 auto;
+}
+.footer__phone {
+  font-size: 18px;
+  color: #86928b;
+}
+.footer__phone span {
+  font-size: 20px;
+  color: #2c2d35;
+}
+.footer__center {
+  width: 445px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #2c2d35;
+}
+.footer__center li {
+  font-size: 18px;
+  color: #86928b;
+  line-height: 200%;
+}
+.footer__social-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.footer__legal {
+  font-size: 12px;
+  line-height: 120%;
+  color: #86928b;
 }/*# sourceMappingURL=styles.css.map */

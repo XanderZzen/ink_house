@@ -1,5 +1,6 @@
 const countriesBtn = document.querySelector('.catalog__countries');
 const catalogCards = document.querySelector('.catalog__cards');
+const country = document.querySelector('.catalog__country');
 
 const france = [
   {

@@ -68,6 +68,10 @@ button {
   &__menu {
     @include flex-align;
   }
+
+  &__cart:visited svg path {
+    stroke: #2c2d35;
+  }
 }
 
 .hero {
@@ -171,6 +175,7 @@ button {
     background-color: $primary-color-default;
     font-weight: 500;
     font-size: 20px;
+    transition: 0.3s ease;
 
     &:focus {
       box-sizing: border-box;
@@ -342,9 +347,6 @@ button {
     justify-content: space-between;
     width: 1110px;
     margin: 0 auto;
-  }
-
-  &__left {
   }
 
   &__phone {

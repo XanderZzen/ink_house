@@ -249,6 +249,9 @@ button {
   flex-wrap: wrap;
   align-items: center;
 }
+.header__cart:visited svg path {
+  stroke: #2c2d35;
+}
 
 .hero {
   display: flex;
@@ -339,6 +342,7 @@ button {
   background-color: #d4e8d9;
   font-weight: 500;
   font-size: 20px;
+  transition: 0.3s ease;
 }
 .catalog__country:focus {
   box-sizing: border-box;

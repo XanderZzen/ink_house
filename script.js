@@ -138,10 +138,13 @@ const england = [
 console.log(countriesBtn);
 console.log(catalogCards);
 
+// отрисовка карточек
+
 countriesBtn.addEventListener('click', (event) => {
   const country = event.target.textContent;
 
   if (country === 'Франция') {
+    country.classList.add('active');
     catalogCards.replaceChildren();
     catalogCards.innerHTML = france
       .map((art) => {

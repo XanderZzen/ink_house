@@ -1,5 +1,6 @@
 const countriesBtn = document.querySelector('.catalog__countries');
 const catalogCards = document.querySelector('.catalog__cards');
+const countriesActive = document.querySelectorAll('.catalog__country');
 const country = document.querySelector('.catalog__country');
 
 const france = [
@@ -137,6 +138,15 @@ const england = [
 
 console.log(countriesBtn);
 console.log(catalogCards);
+
+// делает кнопки стран активными
+
+countriesActive.forEach((tab) => {
+  tab.addEventListener('click', function () {
+    countriesActive.forEach((t) => t.classList.remove('active'));
+    this.classList.add('active');
+  });
+});
 
 // отрисовка карточек
 

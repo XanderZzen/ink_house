@@ -63,6 +63,10 @@ button {
     font-weight: 500;
     font-size: 20px;
     gap: 60px;
+
+    & li {
+      cursor: pointer;
+    }
   }
 
   &__menu {
@@ -191,6 +195,11 @@ button {
     }
 
     &:active {
+      color: #f4f6f5;
+      background-color: #376b44;
+    }
+    &.active {
+      color: #f4f6f5;
       background-color: #376b44;
     }
   }
@@ -245,6 +254,25 @@ button {
     border-color: #598d66;
     border-width: 1px;
     background-color: transparent;
+    transition: 0.3s ease;
+
+    &:focus {
+      box-sizing: border-box;
+      border-style: solid;
+      background-color: #d4e8d9;
+      border-width: 2px;
+      border-color: #598d66;
+    }
+
+    &:hover {
+      color: #f4f6f5;
+      background-color: #598d66;
+    }
+
+    &:active {
+      color: #f4f6f5;
+      background-color: #376b44;
+    }
   }
 }
 
@@ -288,8 +316,24 @@ button {
     font-size: 20px;
     padding: 21px 60px;
     background-color: #eedb6d;
-    border: none;
+    border: solid;
+    border-width: 1px;
+    border-color: transparent;
     margin-top: 40px;
+    transition: ease 0.3s;
+
+    &:focus {
+      background-color: #faeb97;
+      border-color: #a38314;
+    }
+
+    &:hover {
+      background-color: #faeb97;
+    }
+
+    &:active {
+      background-color: #d9b949;
+    }
   }
 }
 
